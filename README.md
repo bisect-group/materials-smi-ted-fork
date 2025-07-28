@@ -19,6 +19,10 @@ For more information contact: eduardo.soares@ibm.com or evital@br.ibm.com.
 
 ## Usage
 
+```bash
+pip install smi-ted
+```
+
 ```python
 import torch
 import smi_ted
@@ -41,4 +45,25 @@ with torch.no_grad():
     encoder_outputs = model.encode(smiles)
 with torch.no_grad():
     decoded_smiles = model.decode(encoder_outputs)
+```
+
+If you use this model, please cite:
+
+```bibtex
+@article{soares2025open,
+  title={An open-source family of large encoder-decoder foundation models for chemistry},
+  author={Soares, Eduardo and Vital Brazil, Emilio and Shirasuna, Victor and Zubarev, Dmitry and Cerqueira, Renato and Schmidt, Kristin},
+  journal={Communications Chemistry},
+  volume={8},
+  number={1},
+  pages={193},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
+}
+@article{soares2024large,
+  title={A large encoder-decoder family of foundation models for chemical language},
+  author={Soares, Eduardo and Shirasuna, Victor and Brazil, Emilio Vital and Cerqueira, Renato and Zubarev, Dmitry and Schmidt, Kristin},
+  journal={arXiv preprint arXiv:2407.20267},
+  year={2024}
+}
 ```
