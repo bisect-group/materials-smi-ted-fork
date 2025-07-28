@@ -1,0 +1,27 @@
+{
+  "architectures": [
+    "MaterialsSmiTedHFModel"
+  ],
+  "d_dropout": 0.1,
+  "dropout": 0.1,
+  "loss_fn": "rmse",
+  "lr_multiplier": 1,
+  "lr_start": 3e-05,
+  "max_epochs": 500,
+  "max_len": 202,
+  "model_type": "materials.smi-ted",
+  "n_batch": 32,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_output": 1,
+  "num_feats": 32,
+  "seed": 12345,
+  "smi_ted_version": "v1",
+  "start_seed": 0,
+  "target_metric": "rmse",
+  "torch_dtype": "float32",
+  "train_decoder": 1,
+  "transformers_version": "4.53.1",
+  "vocab_size": 2393
+}
