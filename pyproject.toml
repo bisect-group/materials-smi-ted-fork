@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smi-ted"
+version = "1.0.0"
+description = "SMILES-based Transformer Encoder-Decoder (SMI-TED)"
+authors = [
+    { name="Eduardo Soares" },
+    { name="Victor Shirasuna" },
+    { name="Emilio Vital Brazil" },
+    { name="Renato Cerqueira" },
+    { name="Dmitry Zubarev" },
+    { name="Kristin Schmidt" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "transformers",
+    "pytorch-fast-transformers",
+    "rdkit",
+    "numpy"
+]
+
+[project.urls]
+arxiv = "https://arxiv.org/abs/2407.20267"
+homepage = "https://huggingface.co/bisectgroup/materials-smi-ted-fork"
+repository = "https://github.com/bisect-group/materials-smi-ted-fork"
+original_github = "https://github.com/IBM/materials/tree/main/models/smi_ted"
+original_huggingface = "https://huggingface.co/ibm/materials.smi-ted"
