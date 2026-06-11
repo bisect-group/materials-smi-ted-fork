@@ -23,6 +23,22 @@ For more information contact: eduardo.soares@ibm.com or evital@br.ibm.com.
 pip install smi-ted
 ```
 
+For local installs from this fork, install directly from the Git repository. The
+package depends on the Bisect `fast-transformers` fork, which builds
+`pytorch-fast-transformers` with PyTorch's CUDA architecture detection instead
+of the upstream hardcoded `compute_50` flag.
+
+```bash
+pip install git+https://github.com/bisect-group/materials-smi-ted-fork.git
+```
+
+You can override CUDA architecture or build parallelism using the standard
+PyTorch extension environment variables:
+
+```bash
+TORCH_CUDA_ARCH_LIST="8.0" MAX_JOBS=32 pip install git+https://github.com/bisect-group/materials-smi-ted-fork.git
+```
+
 ```python
 import torch
 import smi_ted

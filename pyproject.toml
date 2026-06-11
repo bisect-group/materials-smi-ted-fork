@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "smi-ted"
-version = "1.0.0"
+version = "1.0.1"
 description = "SMILES-based Transformer Encoder-Decoder (SMI-TED)"
 authors = [
     { name="Eduardo Soares" },
@@ -20,7 +20,7 @@ requires-python = ">=3.8"
 dependencies = [
     "torch",
     "transformers",
-    "pytorch-fast-transformers",
+    "pytorch-fast-transformers @ git+https://github.com/bisect-group/fast-transformers.git",
     "rdkit",
     "numpy"
 ]
